@@ -1,0 +1,107 @@
+/* ResultDisplay.css */
+.result-display {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem 0;
+  }
+  
+  .result-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-display.error .result-card {
+    border-left: 4px solid #ff3333;
+  }
+  
+  .result-display.success .result-card {
+    border-left: 4px solid #00cc66;
+  }
+  
+  .result-card h2 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+  }
+  
+  .result-details {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+  }
+  
+  .detail-item {
+    display: flex;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .detail-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .detail-label {
+    font-weight: 600;
+    min-width: 120px;
+    color: var(--text-dark);
+  }
+  
+  .detail-value {
+    word-break: break-all;
+    color: var(--text-light);
+  }
+  
+  .result-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .download-button {
+    display: inline-block;
+    background-color: var(--bubblegum-pink);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .download-button:hover {
+    background-color: #FF4372;
+  }
+  
+  .new-button {
+    background-color: transparent;
+    border: 2px solid var(--bubblegum-pink);
+    color: var(--bubblegum-pink);
+  }
+  
+  .new-button:hover {
+    background-color: rgba(255, 95, 132, 0.1);
+  }
+  
+  .result-note {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  @media (max-width: 600px) {
+    .result-actions {
+      flex-direction: column;
+    }
+    
+    .download-button, .new-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
